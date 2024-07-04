@@ -1,0 +1,172 @@
+:root {
+	--header-bg-color: #1a1a1a;
+	--footer-bg-color: #001a13;
+	--main-fg-color: #66ff33;
+	--main-sfg-color: #4ab924;
+	--main-tfg-color: #35d100;
+	--main-bg-color: #0d0d0d;
+	--main-txt-color: #99ffe4;
+	--main-sshadow-color: #009970;
+	--main-pshadow-color: #02d0e3;
+}
+
+body {
+	font-size: 3vh;
+}
+
+h1 { font-size: 1.3em; }
+h2 { font-size: 1em; }
+h3 { font-size: 0.9em; margin-bottom: 0.6em; }
+h4 { font-size: 0.83em; }
+h5 { font-size: 0.7em; }
+
+ul {
+	list-style-type: none;
+	padding-left: 1em;
+	margin-top: 0;
+}
+
+li:before {
+	content: "»";
+	padding-right: 0.7em;
+}
+
+p {
+	text-align: justify;
+}
+
+a, p, li {
+	font-size: 0.7em;
+}
+
+li a {
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-fg-color);
+}
+
+a:before {
+	content: "»";
+	padding-right: 0.3em;
+}
+
+a:after {
+	content: "«";
+	padding-left: 0.3em;
+}
+
+a:hover {
+	color: var(--main-sfg-color);
+}
+
+a:visited {
+	color: var(--main-tfg-color);
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: var(--main-bg-color);
+	color: var(--main-fg-color);
+	font-family: FreeMono;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background: var(--header-bg-color);
+	display: flex;
+	align-items: center;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#profile-name {
+	display: inline-block;
+}
+
+#profile-name img {
+	height: 2em;
+	width: auto;
+	margin-right: 0.3em;
+}
+
+#pcont {
+	display: flex;
+	border: solid 1px;
+	align-items: center;
+	border-radius: 360px;
+	padding-right: 0.5em;
+	background: #001a00;
+}
+
+#pcont p {
+	margin: 0;
+}
+
+.rounded {
+	border-radius: 100%;
+}
+
+.space {
+	padding-left: 0.3em;
+}
+
+.middle-space {
+	flex-grow: 1;
+}
+
+footer {
+	background: var(--footer-bg-color);
+}
+
+footer h5 {
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+}
+
+main {
+	margin: 1.5em;
+	margin-top: 0.5em;
+}
+
+.flex {
+	display: flex;
+}
+
+.grow {
+	flex-grow: 1;
+}
+
+.nfs {
+	font-size: 1em;
+}
+
+.abnormal-link {
+	font-size: 1em;
+}
+
+.abnormal-link:before {
+	content: '';
+	padding: 0;
+}
+
+.abnormal-link:after {
+	content: '';
+	padding: 0;
+}
+
+.inline-img {
+	width: 1em;
+	height: 1em;
+}
